@@ -5,8 +5,9 @@ times = 0
 time_wait_for_appear_letter = 25
 var text = a
 function congratulation(){
+    // b = ""
+    document.getElementById("haveonclick").onclick = ""
     times += 1
-    b = ""
     // document.getElementById("clicked").innerHTML = "Thanks For Visit My WebSite 🥰"
     dequy()
     if(times <= 1){
