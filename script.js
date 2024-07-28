@@ -1,4 +1,4 @@
-var a = "Thanks For Visit My WebSite"
+var a = "Thanks For Visiting My WebSite"
 d = 0
 var b = ""
 times = 0
