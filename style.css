@@ -10,8 +10,8 @@ body{
 }
 
 .idk{
-    position: fixed;
-    top: 50px;
+    /* position: fixed; */
+    top: 10px;
     font-size: 25px;
     text-decoration: underline 4px;
 }
@@ -21,7 +21,7 @@ body{
     left: 0px;
     right: 0px;
     top: 0px;
-    position: fixed;
+    /* position: fixed; */
     padding: 20px 10px;
     background-color: lightcoral;
     font-size: 20px;
@@ -44,23 +44,30 @@ body{
     height: auto;
 }
 
-/* confession */
-.confession{
+/* random_ */
+.nah{
+    display: flex;
+    padding: 10px;
+}
+.random{
     top: 120px;
-    position: fixed;
+    /* position: fixed; */
     width: 210px;
-    height: 270px;
+    height: 150px;
     background-color: lightblue;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
     transition-duration: 0.1s;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-.confession img{
-    width: 200px;
+.random img{
+    width: 100px;
     height: auto;
 }
-.confession a{
+.random a{
     text-decoration: none;
     color: black;
     font-size: 20px;

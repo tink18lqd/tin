@@ -1,2 +1,0 @@
-# tin
-own by hamatsu
