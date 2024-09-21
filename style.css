@@ -22,12 +22,40 @@ body{
     right: 0px;
     top: 0px;
     /* position: fixed; */
-    padding: 20px 10px;
+    display: flex;
+    padding: 10px 10px;
     background-color: lightcoral;
     font-size: 20px;
-    text-shadow: 2px 2px 4px gray;
+    text-shadow: 2px 2px 4px lightgray;
 }
-.mainBar a{
+.mainBar button{
+    /* text-decoration: none; */
+    /* margin-right: 0px; */
+    /* text-align: center; */
+    color: whitesmoke;
+    font-family: qs;
+    padding: 10px 10px;
+    background-color: lightcoral;
+    border: transparent;
+    transition-duration: 0.2s;
+    border-radius: 100px;
+}
+.mainBar button:hover{
+    background-color: whitesmoke;
+    color: lightcoral;
+    transition-duration: 0.2s;
+}
+.mainBar b{
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px lightgray;
+}
+.mainBar .trans{
+    color: transparent;
+    user-select: none;
+    text-shadow: none;
+}
+/* .mainBar a{
     text-decoration: none;
     color: whitesmoke;
     padding: 10px 20px;
@@ -38,8 +66,8 @@ body{
     background-color: whitesmoke;
     color:lightsalmon;
     transition-duration: 0.15s;
-    /* box-shadow: 1px 1px 10px gray; */
-}
+    box-shadow: 1px 1px 10px gray;
+} */
 .mainBar img{
     width: 20px;
     height: auto;
@@ -53,7 +81,8 @@ body{
 .random{
     top: 120px;
     /* position: fixed; */
-    width: 210px;
+    /* width: 210px; */
+    /* width: rem; */
     height: auto;
     background-color: lightblue;
     text-align: center;
@@ -111,6 +140,7 @@ body{
 
 .nah{
     display: flex;
+    height: auto;
 }
 .left{
     /* flex: 1; */
@@ -140,6 +170,6 @@ body{
     flex: 3;
     border-left: 2px gray solid;
     background-color: whitesmoke;
-    height: 30cm;
+    height: 25cm;
     padding: 10px 10px;
 }
