@@ -35,14 +35,24 @@ idOf = [
 ]
 
 Random_ = []
+if(localStorage.getItem("randomAssignment") != null && localStorage.getItem("randomAssignment").length != 0){
+    Random_ = JSON.parse(localStorage.getItem("randomAssignment"))
+}
 
-function randomNNumber(n){
-    for(i = 0; Random_.length < n; i++){
-        var a = Math.floor(Math.random() * (n))
-        if(!Random_.includes(a)){
-            Random_.push(a)
+console.log(Random_.length)
+
+function randomNNumber(len, n, tf){
+    if(tf == false){
+        for(i = 0; Random_.length < n; i++){
+            var a = Math.floor(Math.random() * (len))
+            if(!Random_.includes(a)){
+                Random_.push(a)
+            }
         }
     }
+
+    localStorage.setItem("randomAssignment", JSON.stringify(Random_))
+
     for(i = 1; i <= n; i++){
         console.log(Random_[i-1])
         str = String(i)
@@ -62,4 +72,18 @@ function random_(name_, id_, randomNum){
     // console.log(Name_)
 }
 
-randomNNumber(nameOf.length)
+if(Random_.length == 0){
+    randomNNumber(nameOf.length, 5, false)
+}
+else{
+    randomNNumber(nameOf.length, 5, true)
+}
+
+
+function clearAssignment(){
+    tf = confirm("Are you sủa???")
+    if(tf){
+        localStorage.clear()
+        location.reload()
+    }
+}

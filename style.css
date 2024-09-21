@@ -18,7 +18,7 @@ body{
 
 /* mainBar */
 .mainBar{
-    left: 0px;
+    margin-left: 0px;
     right: 0px;
     top: 0px;
     /* position: fixed; */
@@ -114,9 +114,27 @@ body{
 }
 .left{
     /* flex: 1; */
-    padding: 50px;
+    padding-right: 20px;
     /* background-color: whitesmoke; */
     left: 0px;
+    text-align: center;
+}
+.left a{
+    text-decoration: none;
+    color: lightcoral;
+    /* padding: 10px 100px; */
+    margin-top: 5px;
+    /* background-color: whitesmoke; */
+    transition-duration: 0.2s;
+}
+.left a:hover{
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.left div{
+    background-color: whitesmoke;
+    padding: 10px 50px;
 }
 .center{
     flex: 3;
