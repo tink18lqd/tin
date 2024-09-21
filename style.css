@@ -11,9 +11,9 @@ body{
 
 .idk{
     /* position: fixed; */
-    top: 10px;
+    top: 20px;
     font-size: 25px;
-    text-decoration: underline 4px;
+    border-bottom: 2px gray solid;
 }
 
 /* mainBar */
@@ -38,6 +38,7 @@ body{
     background-color: whitesmoke;
     color:lightsalmon;
     transition-duration: 0.15s;
+    /* box-shadow: 1px 1px 10px gray; */
 }
 .mainBar img{
     width: 20px;
@@ -71,4 +72,56 @@ body{
     text-decoration: none;
     color: black;
     font-size: 20px;
+}
+
+/* contact */
+.contact{
+    background-color: lightgrey;
+    /* padding: 0px 0px; */
+    position: fixed;
+    bottom: 0px;
+    left: -1px;
+    right: -1px;
+    border: 1px grey solid;
+}
+.contact img{
+    width: 20px;
+    height: auto;
+}
+.contact a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    font-size: 15px;
+    transition-duration: 0.2s;
+}
+.contact a:hover{
+    transition-duration: 0.2s;
+    font-size: 20px;
+}
+.contact p{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    text-shadow: 2px 2px 8px gray;
+}
+
+/* left center right nah*/
+
+.nah{
+    display: flex;
+}
+.left{
+    /* flex: 1; */
+    padding: 50px;
+    /* background-color: whitesmoke; */
+    left: 0px;
+}
+.center{
+    flex: 3;
+    border-left: 2px gray solid;
+    background-color: whitesmoke;
+    height: 30cm;
+    padding: 10px 10px;
 }
